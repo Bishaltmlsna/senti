@@ -12,7 +12,6 @@ import matplotlib.pyplot as plt
 try:
     model = joblib.load("sentiment_analysis_model.pkl")
     vectorizer = joblib.load("vectorizer.pkl")
-    st.success("✅ Model and Vectorizer loaded successfully!")
 except Exception as e:
     st.error(f"❌ Error loading model/vectorizer: {e}")
     st.stop()
